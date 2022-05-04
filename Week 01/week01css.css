@@ -1,0 +1,32 @@
+#nick{
+    text-align: left;
+    color: rgb(38, 0, 255);
+    font-weight: bold;
+    margin-left: 20px;
+}
+#title{
+    text-align: left;
+    color: rgb(38, 0, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+#name{
+    text-align: left;
+    color: rgb(38, 0, 255);
+    font-weight: bold;margin-left: 20px;
+}
+
+
+#photo{
+    margin-left: 20px;
+    height: 400px;
+    width: 500px;
+    
+    border-radius: 20px;
+   
+}
+.info{
+    margin-right: 10px;
+    margin-left: 10px;
+}
