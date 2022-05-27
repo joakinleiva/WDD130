@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
 #hero-video {
     max-width: 100%;
     
@@ -12,7 +14,17 @@ nav a {
     text-align: center;
     color: red;
     text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 35px;
 }
+
+nav a:hover {
+    background-color: rgba(4, 28, 114, 4);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
 
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -25,6 +37,9 @@ nav a {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 
 #background {
     height: 725px;
@@ -33,6 +48,9 @@ main section {
 
 body {
     background-color: #ffff;
+    font-family: 'Roboto Flex', 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -40,16 +58,14 @@ header {
     
 }
 
-nav a:hover {
-    background-color: rgba(217, 69, 0, 0.1);
-    color: blue;
-    
-}
-
 .book, .join {
     background-color: grey;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -59,6 +75,8 @@ nav a:hover {
 
 .msg {
     background-color: #5670bd;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: white;
@@ -66,6 +84,8 @@ nav a:hover {
 
 .msg p {
     color: white;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer h3 {
@@ -83,10 +103,19 @@ footer a:hover {
 
 footer {
     background-color: rgba(217, 69, 0, 0.382);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
+
+footer .social img {
+    padding-top: 15px;
+}
+
 
 .home-title {
     color: #d94500;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -97,13 +126,32 @@ h4 {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+#rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
 
+#card-img {
+    border: 10px solid #d94500;
+}
 
 
-
+.mountains {
+    background-size: cover;
+}
 /* PERSONAL CSS */
 

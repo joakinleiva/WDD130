@@ -1,0 +1,12 @@
+
+
+
+body {
+    background-image: url(./images/w05_circles.jpg);
+    background-repeat:no-repeat;
+    /* -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover; */
+    background-size:100%;
+    background-position:center;
+}
