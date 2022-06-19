@@ -42,6 +42,7 @@ body {
 img {
   display: block;
   margin: 0 auto;
+  
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
@@ -50,6 +51,12 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   text-align: center;
 }
+
+.wire-img {
+  width: 700px;
+  height: auto;
+}
+
 hr {
   height: 3px;
   margin: 35px 0;
