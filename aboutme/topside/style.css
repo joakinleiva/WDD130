@@ -1,0 +1,96 @@
+* --------------------------------------------- RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
+{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; text-decoration: none; font-weight: normal;}
+body { margin: 0pt;}
+ol, ul { list-style-type: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* --------------------------------------------- STRUCTURE STYLES */
+body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background: url('bg.jpg') repeat-x top left #f0f0f0;
+}
+
+#container {
+        width: 960px;
+        height: auto;
+        margin: 0 auto 0 auto;
+}
+
+#header {
+        color: #fff;
+        font-size: .9em;
+        width: 190px;
+        height: 40px;
+        float: left;
+        margin-right: 2px;
+}
+
+
+   /* --------------------------------------------- NAVIGATION */
+#navigation {
+        padding-top: 15px;
+        width: 960px;
+        float: left;
+}
+
+#navigation .link {
+        background: #f0f0f0;
+        float: left;
+        text-align:center;
+        font-size:0.5cm
+  }
+
+#navigation .link:hover {
+        background: #92c19b;
+}
+
+#navigation .link:focus{
+        background:silver;      
+  }
+#navigation .link:active{ 
+background:silver; 
+} 
+
+#navigation li a {
+        padding-top: 15px;
+        padding-left: 15px;
+        width: 176px;
+        height: 45px;
+        margin-bottom: 1px;
+        border-left: #fff solid 1px;
+        color: #000;
+        float: left;
+        font-size: 1em;
+}
+
+#navigation p {
+        position: absolute;
+        font-size: .8em;
+        top: 45px;
+        padding-left: 15px;
+}
+
+/* --------------------------------------------- FONTS & IMAGES */
+h1 {font-size: 1.9em;}
+#header h1 {padding: 15px; background: #000; text-align: center; font-weight: bold;}
+#header a {color: #fff;}
+h2 {font-size: 1.9em;}
+#splash h2 {color: #12884f;}
+h3 {font-size: 1.4em; line-height: 1.1em;}
+h4 {font-size: 1em; font-weight: bold;}
+p {font-size: .8em; line-height: 1.6em;}
+p.footer {font-size: .6em; color: #000; text-align: right; padding-top: 100px;}
+p.header {font-size: .8em; font-style: italic; color: #ababab;}
+#content p, #content h3, #sidebar h3, #content h4, #sidebar p {margin-bottom: 25px;}
+img {margin: 0 0 25px 0;}
+li {font-size: .7em; margin-bottom: 10px;}
