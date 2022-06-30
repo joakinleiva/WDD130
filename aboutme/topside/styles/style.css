@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
-#hero-video {
-    max-width: 100%;
-    z-index: -1;
-    
-}
 
 
 nav {
@@ -34,6 +29,25 @@ nav a:active {
     background-color: #faa500;
 }
 
+
+
+
+body {
+    
+    background-color: #ffff;
+    font-family: 'Roboto Flex', 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: rgba(165, 163, 163, 0.164);
+
+    
+}
+
 footer h3 {
     color: white;
     text-decoration: underline;
@@ -60,3 +74,18 @@ footer .social img {
     padding-top: 15px;
 }
 
+.logo {
+    width: 80px;
+    padding-left: 5%;
+    margin-left: 15%;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.icon {
+    width: 50px;
+    padding-top: 10px;
+    color: #FFFFFF;
+}
