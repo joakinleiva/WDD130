@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
+* {
+    scroll-behavior: smooth;
+}
 
+#mainpart {
+    text-align: center;
+    margin-top: 290px;
+    padding-bottom: 0px;
+}
+
+#content {
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 nav {
     display: flex;
@@ -12,6 +25,7 @@ nav {
 nav a {
     text-align: center;
     color: black;
+    font-weight: bold;
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
@@ -29,7 +43,71 @@ nav a:active {
     background-color: #faa500;
 }
 
+/* ITEMS */
 
+
+
+/* HERO */
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 150px;
+    
+}
+             
+
+
+#hero-msg h1 {
+    text-align: center;
+
+} 
+
+#hero-msg h4 {
+    text-align: center;
+    color: white;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+    z-index: -1;
+    
+
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-video {
+    
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    
+    
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+.button-box {
+    text-align: center;
+}
 
 
 body {
@@ -43,10 +121,89 @@ body {
 header {
     display: grid;
     grid-template-columns: 150px auto;
+    
+    
     background-color: rgba(165, 163, 163, 0.164);
 
     
 }
+
+.home-title {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+
+.tellme {
+    background-color: #d94500;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+
+.tellme:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* MAIN */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    
+}
+
+.home-grid div {
+    text-align: center;
+}
+.home-grid div h2 {
+    padding-top: 10px;
+}
+
+.card-img {
+    
+    transition: transform .5s;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+/* CONTACT */
+
+#contact {
+    background: linear-gradient(120deg, #FFA500, #3f4b75);
+    justify-items: center;
+    margin-bottom: 100px;
+    max-width: 100%;
+    display: flex;
+    max-height: 200px;
+    z-index: 1;
+}
+
+#contact form {
+    padding: 10px;
+}
+
+#contact form input {
+    max-width: 300px;
+}
+
+/* FOOTER */
 
 footer h3 {
     color: white;
@@ -62,7 +219,7 @@ footer a:hover {
 }
 
 footer {
-    background-color: #3f4b75;
+    background: linear-gradient(15000deg, #FFA500, #3f4b75);
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -74,18 +231,81 @@ footer .social img {
     padding-top: 15px;
 }
 
+
+
+
+
+
+
+h4 {
+    color: blue;
+}
+
 .logo {
     width: 80px;
     padding-left: 5%;
     margin-left: 15%;
+
 }
+
 
 #logo_link {
     padding-top: 5px;
+
 }
 
 .icon {
     width: 50px;
     padding-top: 10px;
-    color: #FFFFFF;
+}
+
+h2 {
+    margin: 0;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    
+    #hero {
+        margin-top: 0;
+        z-index: -1;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
 }
