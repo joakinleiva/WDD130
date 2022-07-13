@@ -2,24 +2,14 @@
 
 * {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-#mainpart {
-    text-align: center;
-    margin-top: 290px;
-    padding-bottom: 0px;
-}
 
-#mainpart-facades {
-    text-align: center;
-    margin-top: 290px;
-    padding-bottom: 0px;
-}
 
-#content {
-    max-width: 100%;
-    margin: 0 auto;
-}
 
 nav {
     display: flex;
@@ -36,6 +26,8 @@ nav a {
     font-size: 20px;
     text-transform: uppercase;
     padding: 35px;
+    animation: fadeInLeft;
+    animation-duration: 2s;
     
 }
 
@@ -223,11 +215,6 @@ footer .social img {
 }
 
 
-
-
-
-
-
 h4 {
     color: blue;
 }
@@ -236,6 +223,8 @@ h4 {
     width: 80px;
     padding-left: 5%;
     margin-left: 15%;
+    animation: rotateIn;
+    animation-duration: 1s;
 
 }
 
@@ -277,13 +266,13 @@ h2 {
 
 }
 
-.containter {
+.container {
     background-color: #393e467d;
     padding: 20px 40px;
     border-radius: 5px;
 }
 
-.containter a {
+.container a {
     text-decoration: none;
     color: lightblue;
 }
@@ -355,4 +344,172 @@ h2 {
 .form-control input:focus + label span, .form-control input:valid + label span {
     color: lightblue;
     transform: translateY(-30px);
+}
+
+
+/* FACADES */
+
+.facades {
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+
+
+.facades h1 {
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0 ;
+    color: black;
+    animation: bounceInLeft;
+    animation-duration: 2s;
+}
+
+.facades h1::before {
+    content: '';
+    position: relative;
+    width: 100px;
+    height: 3px;
+    background-color: orange;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+    
+}
+
+@keyframes animate {
+    0% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+.top-content label {
+    display: inline-block;
+    height: 100%;
+    
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.top-content label:hover {
+    color: black;
+
+}
+
+.photo-gallery {
+    margin-top: 100px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-top: 50px;
+
+}
+
+.pic {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px lightgray;
+    cursor: pointer;
+    transition: .5s;
+}
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+    animation: flip;
+    animation-duration: 2s;
+}
+
+.pic::before {
+    content: "TOPSIDE LLC";
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+    text-align: center;
+}
+
+.pic::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+
+    height: 0;
+    background-color: rgba(0, 0, 0, .4 );
+    transition: .3s;
+}
+
+.pic:hover::after {
+    height: 100%;
+}
+
+.pic:hover::before {
+    margin-top: 0;
+    opacity: 1;
+}
+
+
+#check1:checked ~ .facades .photo-gallery .pic {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check2:checked ~ .facades .photo-gallery .alluminium {
+    
+    
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check2:checked ~ .facades .photo-gallery .alluminium,
+#check2:checked ~ .facades .photo-gallery .wood  {
+    
+    
+    transform: scale(0);
+    opacity: 0;
+    position: absolute;
+    transition: 0s;
+    
+}
+
+.inputs input {
+    display: none;
 }
